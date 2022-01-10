@@ -19,5 +19,8 @@
   "homepage": "https://github.com/johnkomarnicki/modern-landing-page-with-tailwinds#readme",
   "devDependencies": {
     "tailwindcss": "^2.1.4"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

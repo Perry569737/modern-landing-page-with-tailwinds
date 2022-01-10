@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Bookmark Landing Page</title>
-  </head>
-  <body class="font-Poppins">
-    <!-- Header -->
-    <header>
-      <nav class="container flex items-center py-4 mt-4 sm:mt-12">
-        <div class="py-1"><img src="./imgs/logo-bookmark.svg" alt="" /></div>
-        <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
-          <li class="cursor-pointer">Features</li>
-          <li class="cursor-pointer">Pricing</li>
-          <li class="cursor-pointer">Contact</li>
-          <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase">Login</button>
-        </ul>
-        <div class="flex sm:hidden flex-1 justify-end">
-          <i class="text-2xl fas fa-bars"></i>
-        </div>
-      </nav>
-    </header>
 
-    <!-- Hero -->
-    <section class="relative">
-      <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
-        <!-- Content -->
-        <div class="flex flex-1 flex-col items-center lg:items-start">
-          <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
-            A Simple Bookmark Manager
-          </h2>
-          <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
-            A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites
-            load instantly. Try it for free.
-          </p>
-          <div class="flex justify-center flex-wrap gap-6">
-            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">
-              Get it on Chrome
-            </button>
-            <button type="button" class="btn btn-white hover:bg-bookmark-purple hover:text-white">
-              Get it on Firefox
-            </button>
-          </div>
-        </div>
-        <!-- Image -->
-        <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
-          <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/hero-bg.png" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Bookmark Landing Page</title>
+</head>
+
+<body class="font-Poppins">
+  <!-- Header -->
+  <header id="Introduce">
+    <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+      <div class="py-1 w-60"><img src="./imgs/fb01.png" alt="" /></div>
+      <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
+        <li class="cursor-pointer hover:text-yellow-400"><a href="#Features"> Features</a></li>
+        <li class="cursor-pointer hover:text-yellow-400"><a href="#FAQs"> FAQs</a></li>
+        <li class="cursor-pointer hover:text-yellow-400"><a href="#Contact">Contact</a></li>
+        <button type="button"
+          class="bg-bookmark-purple text-white rounded-md px-7 py-3 uppercase hover:bg-bookmark-grey hover:text-black animate-bounce"><a
+            href="https://zh-tw.facebook.com/" target="new"> Login FB</a></button>
+      </ul>
+      <div class="flex sm:hidden flex-1 justify-end">
+        <i class="text-2xl fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+      <!-- Content -->
+      <div class="flex flex-1 flex-col items-center lg:items-start">
+        <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6" data-aos="zoom-in-right" data-aos-duration="1200">
+          History for facebook
+        </h2>
+        <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6" data-aos="zoom-in-right" data-aos-duration="1200">
+          Facebook is an American online social media and social networking service owned by Meta Platforms. Founded in
+          2004 by Mark Zuckerberg with fellow Harvard College students and roommates Eduardo Saverin, Andrew McCollum,
+          Dustin Moskovitz, and Chris Hughes, its name comes from the face book directories often given to American
+          university students...
+        </p>
+        <div class="flex justify-center flex-wrap gap-6" data-aos="fade-up" data-aos-duration="1200">
+          <button type="button" class="btn btn-purple hover:bg-bookmark-grey hover:text-black"><a
+              href="https://en.wikipedia.org/wiki/Facebook" target="new">
+              Read more about it</a>
+          </button>
+          <button type="button" class="btn btn-white hover:bg-bookmark-grey hover:text-white"><a
+              href="https://www.google.com.tw/search?q=facebook&source=hp&ei=QR7cYZqLIMvM-QbixYjYAg&iflsig=ALs-wAMAAAAAYdwsUSvnW0Ci5xAxYhBAYrJdaXsjrY46&gs_ssp=eJzj4tLP1TfIyK1MKy5TYDRgdGDw4khLTE5Nys_PBgBmYAfL&oq=face&gs_lcp=Cgdnd3Mtd2l6EAEYADIRCC4QgAQQsQMQgwEQxwEQ0QMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyCwgAEIAEELEDEIMBMggIABCABBCxAzIFCAAQgAQyCAgAEIAEELEDMgsIABCABBCxAxCDATIFCAAQgAQ6DgguEIAEELEDEMcBENEDOhEILhCABBCxAxCDARDHARCjAjoLCC4QgAQQsQMQgwE6CAguEIAEELEDOggILhCxAxCDAToFCC4QgARQrRFY9Bdg8iJoAHAAeACAAZ4CiAHLA5IBBTQuMC4xmAEAoAEBsAEA&sclient=gws-wiz"
+              target="new">
+              Search by Google</a>
+          </button>
         </div>
       </div>
-      <!-- Rounded Rectangle -->
-      <div
-        class="
+      <!-- Image -->
+      <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10" data-aos="fade-left" data-aos-duration="1200">
+        <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/fb02.jpg" alt="" />
+      </div>
+    </div>
+    <!-- Rounded Rectangle -->
+    <div class="
           hidden
           md:block
           overflow-hidden
@@ -73,44 +78,37 @@
           lg:
           -bottom-28
           lg:-right-36
-        "
-      ></div>
-    </section>
+        " data-aos="fade-left" data-aos-duration="1200"></div>
+  </section>
 
-    <!-- Features -->
-    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60">
-      <!-- Heading -->
-      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 class="text-3xl text-center text-bookmark-blue">Features</h1>
-        <p class="text-center text-bookmark-grey mt-4">
-          Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between
-          your devices so you can access them on the go.
-        </p>
-      </div>
-      <!-- Feature #1 -->
-      <div class="relative mt-20 lg:mt-24">
-        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
-          <!-- Image -->
-          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-            <img
-              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
-              src="./imgs/illustration-features-tab-1.png"
-              alt=""
-            />
-          </div>
-          <!-- Content -->
-          <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h1 class="text-3xl text-bookmark-blue">Bookmark in one click</h1>
-            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
-              Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control
-              over how you manage your favourite sites.
-            </p>
-            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
-          </div>
+  <!-- Features -->
+  <section class="bg-bookmark-white py-20 mt-20 lg:mt-60" id="Features">
+    <!-- Heading -->
+    <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2" data-aos="fade-down" data-aos-duration="1200">
+      <h1 class="text-3xl text-center text-bookmark-blue">Features</h1>
+      <p class="text-center text-bookmark-grey mt-4">
+        There are many features on facebook for you to use.They can make your use more convenient.
+      </p>
+    </div>
+    <!-- Feature #1 -->
+    <div class="relative mt-20 lg:mt-24">
+      <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+        <!-- Image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0" data-aos="fade-right" data-aos-duration="1200">
+          <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/fb03.png" alt="" />
         </div>
-        <!-- Rounded Rectangle -->
-        <div
-          class="
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h1 class="text-3xl text-bookmark-blue" data-aos="fade-left" data-aos-duration="1200">Personal page</h1>
+          <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full" data-aos="fade-left" data-aos-duration="1200">
+            You can introduce yourself with a personal page, and share all kinds of things in life.
+          </p>
+          <button type="button" class="btn btn-purple hover:bg-bookmark-grey hover:text-black" data-aos="fade-up" data-aos-duration="1200"><a
+              href="https://zh-tw.facebook.com/help/337881706729661" target="new">Learn more</a></button>
+        </div>
+      </div>
+      <!-- Rounded Rectangle -->
+      <div class="
             hidden
             lg:block
             overflow-hidden
@@ -121,33 +119,28 @@
             w-2/4
             -bottom-24
             -left-36
-          "
-        ></div>
-      </div>
-      <!-- Feature #2 -->
-      <div class="relative mt-20 lg:mt-52">
-        <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
-          <!-- Image -->
-          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-            <img
-              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
-              src="./imgs/illustration-features-tab-2.png"
-              alt=""
-            />
-          </div>
-          <!-- Content -->
-          <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h1 class="text-3xl text-bookmark-blue">Intelligent search</h1>
-            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
-              Our powerful search feature will help you find saved sites in no time at all. No need to crawl through all
-              of your bookmarks.
-            </p>
-            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
-          </div>
+          " data-aos="fade-right" data-aos-duration="1200"></div>
+    </div>
+    <!-- Feature #2 -->
+    <div class="relative mt-20 lg:mt-52">
+      <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+        <!-- Image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0" data-aos="fade-left" data-aos-duration="1200">
+          <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/fb04.png" alt="" />
         </div>
-        <!-- Rounded Rectangle -->
-        <div
-          class="
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h1 class="text-3xl text-bookmark-blue" data-aos="fade-right" data-aos-duration="1200">Chat with your friends</h1>
+          <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full" data-aos="fade-right" data-aos-duration="1200">
+            Chat with your friends in the quick and easy way, and it's all free.
+          </p>
+          <button type="button" class="btn btn-purple hover:bg-bookmark-grey hover:text-black" data-aos="fade-up" data-aos-duration="1200"><a
+              href="https://zh-tw.facebook.com/help/1071984682876123/?helpref=hc_fnav" target="new">Learn
+              more</a></button>
+        </div>
+      </div>
+      <!-- Rounded Rectangle -->
+      <div class="
             hidden
             lg:block
             overflow-hidden
@@ -158,33 +151,28 @@
             w-2/4
             -bottom-24
             -right-36
-          "
-        ></div>
-      </div>
-      <!-- Feature #3 -->
-      <div class="relative mt-20 lg:mt-52">
-        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
-          <!-- Image -->
-          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-            <img
-              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
-              src="./imgs/illustration-features-tab-3.png"
-              alt=""
-            />
-          </div>
-          <!-- Content -->
-          <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h1 class="text-3xl text-bookmark-blue">Share your bookmarks</h1>
-            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
-              Easily share your bookmarks and collections with others. Create a shareable link that you can send at the
-              click of a button.
-            </p>
-            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
-          </div>
+          " data-aos="fade-left" data-aos-duration="1200"></div>
+    </div>
+    <!-- Feature #3 -->
+    <div class="relative mt-20 lg:mt-52">
+      <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+        <!-- Image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0" data-aos="fade-right" data-aos-duration="1200">
+          <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/fb05.jpg" alt="" />
         </div>
-        <!-- Rounded Rectangle -->
-        <div
-          class="
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h1 class="text-3xl text-bookmark-blue" data-aos="fade-left" data-aos-duration="1200">Create or join a society</h1>
+          <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full" data-aos="fade-left" data-aos-duration="1200">
+            You can join any club you like, or create your own club for others to join. Just have fun together.
+          </p>
+          <button type="button" class="btn btn-purple hover:bg-bookmark-grey hover:text-black" data-aos="fade-up" data-aos-duration="1200"><a
+              href="https://zh-tw.facebook.com/help/1629740080681586/?helpref=hc_fnav" target="new">Learn
+              more</a></button>
+        </div>
+      </div>
+      <!-- Rounded Rectangle -->
+      <div class="
             hidden
             lg:block
             overflow-hidden
@@ -195,139 +183,141 @@
             w-2/4
             -bottom-24
             -left-36
-          "
-        ></div>
-      </div>
-    </section>
+          " data-aos="fade-right" data-aos-duration="1200"></div>
+    </div>
+  </section>
 
-    <!-- Download -->
-    <section class="py-20 mt-20">
-      <!-- Heading -->
-      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 class="text-3xl text-center text-bookmark-blue">Download the extension</h1>
-        <p class="text-center text-bookmark-grey mt-4">
-          We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to
-          prioritize.
-        </p>
-      </div>
-      <!-- Cards -->
-      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
-        <!-- Card 1 -->
-        <div class="flex flex-col rounded-md shadow-md lg:mb-16">
-          <div class="p-6 flex flex-col items-center">
-            <img src="./imgs/logo-chrome.svg" alt="" />
-            <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
-            <p class="mb-2 text-bookmark-grey font-light">Minimum version 62</p>
-          </div>
-          <hr class="border-b border-bookmark-white" />
-          <div class="flex p-6">
-            <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
-              Add & Install Extension
-            </button>
-          </div>
+  <!-- Download -->
+  <section class="py-20 mt-20">
+    <!-- Heading -->
+    <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+      <h1 class="text-3xl text-center text-bookmark-blue" data-aos="fade-down" data-aos-duration="1200">Use in different browser</h1>
+      <p class="text-center text-bookmark-grey mt-4" data-aos="fade-down" data-aos-duration="1200">
+        You can log in facebook in many of ways.
+      </p>
+    </div>
+    <!-- Cards -->
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+      <!-- Card 1 -->
+      <div class="flex flex-col rounded-md shadow-md lg:mb-16" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+        <div class="p-6 flex flex-col items-center">
+          <img src="./imgs/logo-chrome.svg" alt="" />
+          <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Use on Chrome</h3>
+          <p class="mb-2 text-bookmark-grey font-light">The most popular choice.</p>
         </div>
-        <!-- Card 2 -->
-        <div class="flex flex-col rounded-md shadow-md lg:my-8">
-          <div class="p-6 flex flex-col items-center">
-            <img src="./imgs/logo-firefox.svg" alt="" />
-            <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Firefox</h3>
-            <p class="mb-2 text-bookmark-grey font-light">Minimum version 62</p>
-          </div>
-          <hr class="border-b border-bookmark-white" />
-          <div class="flex p-6">
-            <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
-              Add & Install Extension
-            </button>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="flex flex-col rounded-md shadow-md lg:mt-16">
-          <div class="p-6 flex flex-col items-center">
-            <img src="./imgs/logo-opera.svg" alt="" />
-            <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Opera</h3>
-            <p class="mb-2 text-bookmark-grey font-light">Minimum version 62</p>
-          </div>
-          <hr class="border-b border-bookmark-white" />
-          <div class="flex p-6">
-            <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
-              Add & Install Extension
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="bg-bookmark-white py-20">
-      <div class="container">
-        <!-- Heading -->
-        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-          <h1 class="text-3xl text-center text-bookmark-blue">Frequently Asked Questions</h1>
-          <p class="text-center text-bookmark-grey mt-4">
-            Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
-          </p>
-        </div>
-        <!-- FAQ Items -->
-        <div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
-          <div class="flex items-center border-b py-4">
-            <span class="flex-1">What is a Bookmark?</span>
-            <i class="text-bookmark-purple fas fa-chevron-down"></i>
-          </div>
-          <div class="flex items-center border-b py-4">
-            <span class="flex-1">How can I request a new browser?</span>
-            <i class="text-bookmark-purple fas fa-chevron-down"></i>
-          </div>
-          <div class="flex items-center border-b py-4">
-            <span class="flex-1">Is there a mobile app?</span>
-            <i class="text-bookmark-purple fas fa-chevron-down"></i>
-          </div>
-          <div class="flex items-center border-b py-4">
-            <span class="flex-1">What about other Chromium browsers?</span>
-            <i class="text-bookmark-purple fas fa-chevron-down"></i>
-          </div>
-          <button type="button" class="mt-12 flex self-center btn btn-purple hover:bg-bookmark-white hover:text-black">
-            More Info
+        <hr class="border-b border-bookmark-white" />
+        <div class="flex p-6">
+          <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-grey hover:text-black">
+            <a href="https://www.google.com/intl/zh-TW/chrome/?brand=JJTC&gclid=CjwKCAiAz--OBhBIEiwAG1rIOrtHXpEPHUdzYXyx2UC-0N0ZgCteujmFT2b4AqhgVaPO5JsqFowS9BoCC6sQAvD_BwE&gclsrc=aw.ds"
+              target="new">Search and install for it</a>
           </button>
         </div>
       </div>
-    </section>
-
-    <!-- Contact Us -->
-    <section class="bg-bookmark-purple text-white py-20">
-      <div class="container">
-        <div class="sm:w-3/4 lg:w-2/4 mx-auto">
-          <p class="font-light uppercase text-center mb-8">35,000+ ALREADY JOINED</p>
-          <h1 class="text-3xl text-center">Stay up-to-date with what we’re doing</h1>
-          <div class="flex flex-col sm:flex-row gap-6 mt-8">
-            <input
-              type="text"
-              placeholder="Enter your email address"
-              class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
-            />
-            <button type="button" class="btn bg-bookmark-red hover:bg-bookmark-white hover:text-black">
-              Contact Us
-            </button>
-          </div>
+      <!-- Card 2 -->
+      <div class="flex flex-col rounded-md shadow-md lg:my-8" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+        <div class="p-6 flex flex-col items-center">
+          <img src="./imgs/logo-firefox.svg" alt="" />
+          <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Firefox</h3>
+          <p class="mb-2 text-bookmark-grey font-light">Users' second choice.</p>
+        </div>
+        <hr class="border-b border-bookmark-white" />
+        <div class="flex p-6">
+          <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-grey hover:text-black">
+            <a href="https://www.mozilla.org/zh-TW/firefox/new/" target="new">Search and install for it</a>
+          </button>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-bookmark-blue py-8">
-      <div class="container flex flex-col md:flex-row items-center">
-        <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
-          <img src="./imgs/logo-bookmark-white.png" alt="" />
-          <ul class="flex text-white uppercase gap-12 text-xs">
-            <li class="cursor-pointer">Features</li>
-            <li class="cursor-pointer">Pricing</li>
-            <li class="cursor-pointer">Contact</li>
-          </ul>
+      <!-- Card 3 -->
+      <div class="flex flex-col rounded-md shadow-md lg:mt-16" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+        <div class="p-6 flex flex-col items-center">
+          <img src="./imgs/logo-opera.svg" alt="" />
+          <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Opera</h3>
+          <p class="mb-2 text-bookmark-grey font-light">Some users' choice.</p>
         </div>
-        <div class="flex gap-10 mt-12 md:mt-0">
-          <li><i class="text-white text-2xl fab fa-twitter"></i></li>
-          <li><i class="text-white text-2xl fab fa-facebook-square"></i></li>
+        <hr class="border-b border-bookmark-white" />
+        <div class="flex p-6">
+          <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-grey hover:text-black">
+            <a href="https://www.opera.com/zh-cn" target="new">Search and install for it</a>
+          </button>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-bookmark-white py-20" id="FAQs">
+    <div class="container">
+      <!-- Heading -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-bookmark-blue" data-aos="fade-down" data-aos-duration="1200">Frequently Asked Questions</h1>
+        <p class="text-center text-bookmark-grey mt-4" data-aos="fade-down" data-aos-duration="1200">
+          Here are some of our FAQs. Maybe they can solve some of your problems.
+        </p>
+      </div>
+      <!-- FAQ Items -->
+      <div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto" data-aos="fade-up" data-aos-duration="1200">
+        <div class="flex items-center border-b py-4">
+          <span class="flex-1">How can I create an account?</span>
+          <i class="text-bookmark-purple fas fa-chevron-down"></i>
+        </div>
+        <div class="flex items-center border-b py-4">
+          <span class="flex-1">How can I edit or add to my profile?</span>
+          <i class="text-bookmark-purple fas fa-chevron-down"></i>
+        </div>
+        <div class="flex items-center border-b py-4">
+          <span class="flex-1">How can I search and add friends?</span>
+          <i class="text-bookmark-purple fas fa-chevron-down"></i>
+        </div>
+        <div class="flex items-center border-b py-4">
+          <span class="flex-1">What is a time-limited dynamic?</span>
+          <i class="text-bookmark-purple fas fa-chevron-down"></i>
+        </div>
+        <button type="button" class="mt-12 flex self-center btn btn-purple hover:bg-bookmark-grey hover:text-black"><a
+            href="https://zh-hk.facebook.com/help" target="new">More Info</a>
+
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section class="bg-bookmark-purple text-white py-20" id="Contact">
+    <div class="container" data-aos="zoom-in" data-aos-duration="1200">
+      <div class="sm:w-3/4 lg:w-2/4 mx-auto">
+        <p class="font-light uppercase text-center mb-8">100,000,000+ ALREADY JOINED</p>
+        <h1 class="text-3xl text-center">Contact us to resolve your questions</h1>
+        <div class="flex flex-col sm:flex-row gap-6 mt-8">
+          <input type="text" placeholder="Enter any of your questions"
+            class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black" />
+          <button type="button" class="btn bg-bookmark-red hover:bg-bookmark-grey hover:text-black">
+            <a href="https://www.facebook.com/business/help/" target="new"> Contact Us</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-bookmark-blue py-8">
+    <div class="container flex flex-col md:flex-row items-center">
+      <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
+        <img src="./imgs/fb01.png" alt="" class="w-60">
+        <ul class="flex text-white uppercase gap-12 text-xs">
+          <li class="cursor-pointer hover:text-yellow-400"><a href="#Introduce"> Introduce</a></li>
+          <li class="cursor-pointer hover:text-yellow-400"><a href="#Features"> Features</a></li>
+          <li class="cursor-pointer hover:text-yellow-400"><a href="#FAQs">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="flex gap-10 mt-12 md:mt-0">
+        <li><i class="text-white text-2xl fab fa-twitter"></i></li>
+        <li><i class="text-white text-2xl fab fa-facebook-square"></i></li>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
